@@ -1,0 +1,189 @@
+/* & Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;1,400;500;600;1,600&display=swap');
+
+/* & Page reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #c8efd6 0%, #f8bdd6 50%, #acc8e9 100%);
+    /* background: linear-gradient(to right, #8360c3, #2ebf91); */
+}
+
+/* & Style the container */
+.container {
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.container h1 {
+    font-weight: 600;
+    font-style: italic;
+    /* font-size: 1.31rem; */
+    font-size: 1.5rem; 
+    padding: 1rem 1.75rem;
+    text-align: center;
+    color: #636363;
+    border-bottom: 1px solid #aaa;
+}
+
+/* & Style the Wrapper */
+.wrapper {
+    margin: 1.25rem 1.75rem;
+}
+
+.wrapper .input-box {
+    position: relative;
+}
+
+/* & Style the Input-box */
+.input-box input {
+    width: 100%;
+    height: 65px;
+    color: #696969;
+    background: whitesmoke;
+    font-size: 1.06rem;
+    font-weight: 500;
+    border-radius:50px;
+    letter-spacing: 1.4px;
+    /* border: 1px solid #d4dbe5; */
+    border: 1px solid #aaa;
+    padding: 0 2.85rem 0 1rem;
+}
+
+.input-box span {
+    position: absolute;
+    /* top: 14px; */
+    right: 14px;
+    cursor: pointer;
+    line-height: 65px;
+    color: #707070;
+}
+
+.input-box span:hover {
+    color: salmon !important;
+}
+
+/* & Style the pass-indicator */
+.wrapper .pass-indicator {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+}
+
+/* ? will insert something before the content of this element */
+.pass-indicator::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    /* ? inherit the border-box property from the above parent element */
+    border: inherit;
+    transition: width 0,3s ease;
+}
+
+/* ? will insert something before the id called weak */
+.pass-indicator#weak::before {
+    width: 25%;
+    background: #FE2E28;
+}
+
+/* ? will insert something before the id called medium */
+.pass-indicator#medium::before {
+    width: 50%;
+    background: #E9F75A;
+
+}
+
+/* ? will insert something before the id called strong */
+.pass-indicator#strong::before {
+    width: 100%;
+    background: #38B995;
+}
+
+
+/* ~ Style the password length */
+.wrapper .pass-length {
+    margin: 1.56rem 0 1.25rem;
+}
+
+.pass-length .details {
+    display: flex;
+    justify-content: space-between;
+    color: #696969;
+}
+
+.pass-length input {
+    width: 100%;
+    height: 5px;
+    /* ! will come back to this to see if still necessary */
+}
+
+/* & Style the list of requirements for the password settings */
+.pass-settings .options {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.pass-settings .options .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: calc(100% / 2);
+    /* ! will come back to this to see if it is necessary */
+    /* gap: 0.5rem; */
+}
+
+.pass-settings label {
+    color: #696969;
+}
+
+.options .option:first-child {
+    pointer-events: none;
+}
+
+.options .option:first-child input {
+    opacity: 0.7;
+}
+
+.options .option input {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.options .option label {
+    cursor: pointer;
+    color: #696969;
+    padding-left: 0.63rem;
+}
+
+/* & Style the Generate btn */
+.wrapper .generate-btn {
+    width: 100%;
+    color: #fff;
+    /* border: #aaa; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    font-size: 1.06rem;
+    padding: 0.94rem 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin: 0.94rem 0 1.3rem;
+}
