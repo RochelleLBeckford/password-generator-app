@@ -40,4 +40,4 @@
 
 ---
 
-- [ ] Link for the web application: <a href="https://rlb-text-editor.netlify.app/">Text Editor App</a>
+- [ ] Link for the web application: <a href="https://rlb-password-generator.netlify.app/">Password Generator App</a>
