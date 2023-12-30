@@ -18,7 +18,7 @@
   - [ ] -> Lowercase (a-z)
   - [ ] -> Uppercase (A-Z)
   - [ ] -> Numbers (0-9)
-  - [ ] -> Symbols (!-$^+) 
+  - [ ] -> Symbols (!-$^+)
   - [ ] -> Exclude Duplicate
   - [ ] -> Include Spaces
 - [ ] The user will then click the Generate Password Button and then the new password will generate in the input text box
